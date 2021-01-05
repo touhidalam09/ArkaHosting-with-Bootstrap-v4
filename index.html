@@ -1,0 +1,1623 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/icon.ico" type="image/gif" sizes="16x16">
+
+
+        <!-- Offline Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Goole Font Online--> 
+        <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">-->
+        <!--Google font Offline--> 
+        <link rel="stylesheet" href="fonts/stylesheet.css">
+
+        <!-- font awesome / -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+        <title>Arka Hosting</title>
+    </head>
+    <body>
+        <!-- #region Jssor Slider Begin -->
+        <!--FOR CUSTOME SLIDER START-->
+        <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.jssor_1_slider_init = function () {
+
+                var jssor_1_options = {
+                    $AutoPlay: 1,
+                    $SlideWidth: 720,
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$,
+                        $SpacingX: 16,
+                        $SpacingY: 16
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*#region responsive code begin*/
+
+                var MAX_WIDTH = 980;
+
+                function ScaleSlider() {
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+                    var containerWidth = containerElement.clientWidth;
+
+                    if (containerWidth) {
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+                    } else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+
+                ScaleSlider();
+
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*#endregion responsive code end*/
+            };
+        </script>
+        <style>
+            /*jssor slider loading skin spin css*/
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes jssorl-009-spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+
+            /*jssor slider bullet skin 051 css*/
+            .jssorb051 .i {position:absolute;cursor:pointer;}
+            .jssorb051 .i .b {fill:#fff;fill-opacity:0.3;}
+            .jssorb051 .i:hover .b {fill-opacity:.7;}
+            .jssorb051 .iav .b {fill-opacity: 1;}
+            .jssorb051 .i.idn {opacity:.3;}
+
+            /*jssor slider arrow skin 051 css*/
+            .jssora051 {display:block;position:absolute;cursor:pointer;}
+            .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+            .jssora051:hover {opacity:.8;}
+            .jssora051.jssora051dn {opacity:.5;}
+            .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+        </style>
+        <!--FOR CUSTOME SLIDER END-->
+
+
+
+        <!--Header section start--> 
+
+        <div class="container-fluid header-contract">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-4 my-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" id="dropdown-btn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="language">Language</span>
+                                <span> <img src="img/eng.png" class="language-img"/> </span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" id="english" onclick="lang()" type="button">English 
+                                    <span> <img src="img/eng.png" class="language-img"/> </span>
+                                </button>
+                                <button class="dropdown-item" id="bengali" onclick="lang()"  type="button">Bengali
+                                    <span> <img src="img/ban.png" class="language-img"/> </span>
+                                </button>
+                                <button class="dropdown-item" id="arabic" onclick="lang()"  type="button">Turky
+                                    <span> <img src="img/turky.png" class="language-img"/> </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-8 d-flex justify-content-end">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <ul class="navbar-nav">
+                                <li class="nav-item pr-2">
+                                    <a class="nav-link contact-a" href="#">
+                                        <i class="fas fa-phone-square contact-i"></i>
+                                        <span class="contact-span">1.123.456.78900</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class="nav-link contact-a" href="#">
+                                        <i class="fas fa-envelope-open-text contact-i"></i>
+                                        <span class="contact-span">WebMail</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class="nav-link contact-a" href="#">
+                                        <i class="far fa-comment-alt contact-i"></i>
+                                        <span class="contact-span">LiveChat</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class="nav-link contact-a" href="#">
+                                        <i class="fas fa-question-circle contact-i"></i>
+                                        <span class="contact-span">Support</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn-login-a contact-a" href="#">
+                                        <i class="fas fa-user contact-i"></i>
+                                        <span class="contact-span">login</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item pl-2">
+                                    <a class="nav-link contact-a" href="#">
+                                        <i class="fas fa-cart-plus contact-i"></i>
+                                        <span class="contact-span">0</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--2nd part/ of header--> 
+        <div class="container-fluid sticky-top header-head-section">
+            <div class='container'>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"><img class="col" src="img/logo@1X.png"/></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse my-custome-nav-collapse-xs" id="navbar">
+                        <ul class="navbar-nav my-navbar-right">
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#home">HOME<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#hosting">HOSTING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#domains">DOMAINS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#features">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#service">SERVICE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#blog">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#support">SUPPORT</a>
+                            </li>                     
+                            <li class="nav-item">
+                                <a class="nav-link navItem-a-hover" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <header class="header-section" id="home">
+            <!--3rd part--> 
+            <div class="container-fluid bg-light">
+                <div class="container header-body-section">
+                    <div class="row">
+                        <div class="col col-sm-6">
+                            <div class="header-body-right">
+                                <h3 class="text-responsive header-body-h3 text-uppercase pb-4">
+                                    Build Your Dream Website with
+                                </h3>
+                                <h1 class="text-responsive header-body-h1 pb-3">
+                                    <span style="color:#6bad24;">ARKA</span> HOSTING
+                                </h1>
+                                <h6 class="text-responsive header-body-h6 pt-3">
+                                    Powerful and Cheap Web Hosting and Domains for your Website.
+                                    Get Web Hosting and Receive a <a href="#">FREE Domain Name!</a>
+                                </h6>
+                                <div class="pt-5">
+                                    <button class="btn btn-dark header-body-btn">GET STARTED NOW!</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col col-sm-6 pt-3 text-white">
+                            <div class="head-body-left">
+                                <div class="rect-div">
+                                    Up to
+                                    <h3 class="py-3">40% OFF</h3>
+                                    Hosting &
+                                    Domains
+                                </div>
+                                <div class="circle-div text-white">
+                                    <div class="circle-div-text">
+                                        <span class="circle-div-dance">  Starts at</span>
+                                        <span class="circle-div-bold">$3.99</span><span class="circle-div-medium">/mo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                    header 4th part -->
+            <div class="container-fluid header-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-white">
+                            <label class="header-footer-label" for="serch-box">
+                                FIND YOUR PERFECT DOMAIN NAME:
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter your domain name here..." aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <div class="col header-footer-btn-div">
+                            <button type="button" class="btn btn-search text-white">SEARCH DOMAIN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid header-footer-domin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-1">
+
+                        </div>
+                        <div class="col-xm-12 col-sm-12 col-md-11">
+                            <div class="row">
+                                <div class="col my-hf-col">
+                                    <span>.com</span> <span> $5.75</span>
+                                </div>
+                                <div class="col my-hf-col">
+                                    <span>.net</span> <span> $9.45</span>
+                                </div>
+                                <div class="col my-hf-col">
+                                    <span>.org</span> <span> $7.50</span>
+                                </div>
+                                <div class="col my-hf-col">
+                                    <span>.us</span> <span> $5.99</span>
+                                </div>
+                                <div class="col my-hf-col">
+                                    <span>.biz</span> <span> $9.99</span>
+                                </div>
+                                <div class="col col-md-2 my-hf-col">
+                                    <small>* All prices<br/>
+                                        per annum</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!--Header section end--> 
+        <!--Hosting plan START--> 
+        <div class="container-fluid" id="hosting">
+            <div class="container my-hosting-section">
+                <div class="row pb-5">
+                    <div class="col col-sm-12 my-hosting-header-col">
+                        <h1 class="text-uppercase pb-3">
+                            We are Announcing Perfect Package for you
+                        </h1>
+                        <small>
+                            ARKAHOST Providing you with a hesitate free web hosting service we take words look the believable.
+                        </small>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <div class="card-contain">
+                            <div class="card my-card">
+                                <div class="card-body text-center my-card-body">
+                                    <h5 class="card-title py-4">STARTER</h5>
+                                    <div class="my-card-body-img">
+                                        <img class="card-img-top" src='img/Layer 24@1X (1).png' onmouseover="this.src = 'img/Layer 24@1X.png'" onmouseout="this.src = 'img/Layer 24@1X (1).png'" alt="Card image cap">
+                                    </div>
+                                    <div class="hosting-text-img">
+                                        <div class="row justify-content-md-center py-2">
+                                            <span>$2.99</span><span>/M</span>
+                                        </div>
+                                        <small>Regularly <s>$4.99</s></small>
+                                        <div class="row justify-content-md-center py-2">
+                                            <button type="button" class="btn bg-white px-4 my-host-card-btn">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-group-flush hosting-card-ul">
+                                    <li class="py-4"><b>Unlimited</b> <small>Web Space</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Site Building Tools</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Domain Registar</small></li>
+                                    <li class="list-group-item py-3"><b>24/7/365</b> <small>Support</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Marketing & SEO Tools</small></li>
+                                    <li class="list-group-item py-3"><b>99.9%</b> <small>Service Uptime</small></li>
+                                    <li class="list-group-item py-3"><b>30 Day</b> <small>Money Back Guarantee</small></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <!--card contain end--> 
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <div class="card-rate text-center">
+                            <p class="card-rate-text">BEST SELLER</p>
+                        </div>
+                        <div class="card-contain">
+                            <div class="card my-card">
+                                <div class="card-body text-center my-card-body">
+                                    <h5 class="card-title py-4">STARTER</h5>
+                                    <div class="my-card-body-img">
+                                        <img class="card-img-top" src='img/Layer 24@1X (1).png' onmouseover="this.src = 'img/Layer 24@1X.png'" onmouseout="this.src = 'img/Layer 24@1X (1).png'" alt="Card image cap">
+                                    </div>
+                                    <div class="hosting-text-img">
+                                        <div class="row justify-content-md-center py-2">
+                                            <span>$2.99</span><span>/M</span>
+                                        </div>
+                                        <small>Regularly <s>$4.99</s></small>
+                                        <div class="row justify-content-md-center py-2">
+                                            <button type="button" class="btn bg-white px-4 my-host-card-btn">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-group-flush hosting-card-ul">
+                                    <li class="py-4"><b>Unlimited</b> <small>Web Space</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Site Building Tools</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Domain Registar</small></li>
+                                    <li class="list-group-item py-3"><b>24/7/365</b> <small>Support</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Marketing & SEO Tools</small></li>
+                                    <li class="list-group-item py-3"><b>99.9%</b> <small>Service Uptime</small></li>
+                                    <li class="list-group-item py-3"><b>30 Day</b> <small>Money Back Guarantee</small></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <!--card contain end--> 
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <!--                        <div class="hover-card-rate">
+                        
+                                                </div>-->
+                        <div class="card-contain">
+                            <div class="card my-card">
+                                <div class="card-body text-center my-card-body">
+                                    <h5 class="card-title py-4">STARTER</h5>
+                                    <div class="my-card-body-img">
+                                        <img class="card-img-top" src='img/Layer 24@1X (1).png' onmouseover="this.src = 'img/Layer 24@1X.png'" onmouseout="this.src = 'img/Layer 24@1X (1).png'" alt="Card image cap">
+                                    </div>
+                                    <div class="hosting-text-img">
+                                        <div class="row justify-content-md-center py-2">
+                                            <span>$2.99</span><span>/M</span>
+                                        </div>
+                                        <small>Regularly <s>$4.99</s></small>
+                                        <div class="row justify-content-md-center py-2">
+                                            <button type="button" class="btn bg-white px-4 my-host-card-btn">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-group-flush hosting-card-ul">
+                                    <li class="py-4"><b>Unlimited</b> <small>Web Space</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Site Building Tools</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Domain Registar</small></li>
+                                    <li class="list-group-item py-3"><b>24/7/365</b> <small>Support</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Marketing & SEO Tools</small></li>
+                                    <li class="list-group-item py-3"><b>99.9%</b> <small>Service Uptime</small></li>
+                                    <li class="list-group-item py-3"><b>30 Day</b> <small>Money Back Guarantee</small></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <!--card contain end--> 
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <!--                        <div class="hover-card-rate">
+                        
+                                                </div>-->
+                        <div class="card-contain">
+                            <div class="card my-card">
+                                <div class="card-body text-center my-card-body">
+                                    <h5 class="card-title py-4">STARTER</h5>
+                                    <div class="my-card-body-img">
+                                        <img class="card-img-top" src='img/Layer 24@1X (1).png' onmouseover="this.src = 'img/Layer 24@1X.png'" onmouseout="this.src = 'img/Layer 24@1X (1).png'" alt="Card image cap">
+                                    </div>
+                                    <div class="hosting-text-img">
+                                        <div class="row justify-content-md-center py-2">
+                                            <span>$2.99</span><span>/M</span>
+                                        </div>
+                                        <small>Regularly <s>$4.99</s></small>
+                                        <div class="row justify-content-md-center py-2">
+                                            <button type="button" class="btn bg-white px-4 my-host-card-btn">SIGN UP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-group-flush hosting-card-ul">
+                                    <li class="py-4"><b>Unlimited</b> <small>Web Space</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Site Building Tools</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Domain Registar</small></li>
+                                    <li class="list-group-item py-3"><b>24/7/365</b> <small>Support</small></li>
+                                    <li class="list-group-item py-3"><b>FREE</b> <small>Marketing & SEO Tools</small></li>
+                                    <li class="list-group-item py-3"><b>99.9%</b> <small>Service Uptime</small></li>
+                                    <li class="list-group-item py-3"><b>30 Day</b> <small>Money Back Guarantee</small></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <!--card contain end--> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hosting plan END-->
+        <!--/*why us Start*/--> 
+        <div class="container-fluid bg-light" id="domains">
+            <section class="why-us-section">
+                <div class="container">
+                    <div class="row text-center text-uppercase">
+                        <div class="col">
+                            <h2 class="why-us-h2">
+                                What makes our hosting is Best?
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!--first row--> 
+                    <div class="row pb-5">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-sm-2 col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket.png" alt="no image"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">99.9% Uptime Guarantee</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-sm-2 col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket-t.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">One FREE Domain for Life</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-sm-2 col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">Unlimited Disk Space</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second rows--> 
+                    <div class="row pb-5">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket-t.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">Advanced Security Scan</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">Host Unlimited Domains</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket-t.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">Free 24×7/365 Support</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third row--> 
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">cPanel Control Panel</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket-t.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">Free Website Transfer</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col-md-2 why-us-circle-div">
+                                    <div class="why-us-circle-hover d-flex justify-content-center align-items-center">
+                                        <img class="why-us-circle-div" src="img/why-us-rocket.png" alt="no image"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 pt-3">
+                                    <h5 class="why-us-h5 pb-4">30 Day Money-back Guarantee</h5>
+                                    <small class="why-us-small">
+                                        Desktop publishing packages web page
+                                        model and a for many web sites.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third row end--> 
+                </div>
+            </section>
+        </div>
+        <!--/*Why-US END*/--> 
+        <!--Service Start--> 
+        <div class="container-fluid pt-5 pb-3" id="service">
+            <div class="container">
+                <div class="row py-5 text-center text-uppercase">
+                    <div class="col-sm-12 col-md-12">
+                        <h2 class="service-h2">
+                            how to build your website Online Today?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main first row--> 
+        <div class="service">
+            <div class="container service-con text-white">
+                <div class="row py-5">
+                    <!--first column start--> 
+                    <div class="col-sm-12 col-md-6">
+                        <div class="left-side-service">
+                            <div class="row pt-5 pb-3">
+                                <div class="col-xs-12 col-sm-2 col-md-3">
+                                    <img src="img/Layer 75@1X.png" alt="no image" />
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9 service-1st-row-div">
+                                    <h6 class="text-uppercase">Create your own website with our</h6>
+                                    <h2 class="text-uppercase">
+                                        Web site builder 
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-1">
+                                    <i class="fas fa-arrow-right font-aws-icon-rotate"></i>
+                                </div>
+                                <div class="col-md-11 service-row-font-div">
+                                    <p>
+                                        Point One is many web sites still in their infancy various versions
+                                        have evolved over the years.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-1">
+                                    <i class="fas fa-arrow-right font-aws-icon-rotate"></i>
+                                </div>
+                                <div class="col-md-11 service-row-font-div">
+                                    <p>
+                                        Point Two is desktop publishing software like include.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-1">
+                                    <i class="fas fa-arrow-right font-aws-icon-rotate"></i>
+                                </div>
+                                <div class="col-md-11 service-row-font-div">
+                                    <p>
+                                        Point Three is alteration in some form by humou or randomised
+                                        <span class="para-span-color">Starting at Just $99 only.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row py-3 pl-3">
+                                <button type="button" class="btn btn-light service-btn">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--col 1st END--> 
+                    <!--2nd column Start--> 
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="right-side-service">
+                            <div class="row pt-5 pb-3">
+                                <div class="col-xs-12 col-sm-2 col-md-3">
+                                    <img src="img/Layer 75@1X.png" alt="no image" />
+                                </div>
+                                <div class="col-xs-12 col-sm-10 col-md-9 service-1st-row-div">
+                                    <h6 class="text-uppercase">Arka web hosting before you upload</h6>
+                                    <h2 class="text-uppercase">
+                                        host with domain
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-1 col-md-1">
+                                    <i class="fas fa-arrow-right font-aws-icon-rotate"></i>
+                                </div>
+                                <div class="col-md-11 service-row-font-div">
+                                    <p>
+                                        Point One is many web sites still in their infancy various versions
+                                        have evolved over the years.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-1 col-md-1">
+                                    <i class="fas fa-arrow-right font-aws-icon-rotate"></i>
+                                </div>
+                                <div class="col-md-11 service-row-font-div">
+                                    <p>
+                                        Point Two is desktop publishing software like include.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col-md-1 col-md-1">
+                                    <i class="fas fa-arrow-right font-aws-icon-rotate"></i>
+                                </div>
+                                <div class="col-md-11 service-row-font-div">
+                                    <p>
+                                        Point Three is alteration in some form by humou or randomised
+                                        <span class="para-span-color">Starting at Just $99 only.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row py-3 pl-3">
+                                <button type="button" class="btn btn-light service-btn">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second column end--> 
+                </div>
+            </div>
+        </div>
+        <!--Service END--> 
+        <!--VIDEO START--> 
+        <section class="video-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 d-flex flex-wrap justify-content-around my-video-col">
+                            <div class="my-video-div-left text-uppercase">
+                                <p class="text-center">
+                                    First Time Building?
+                                </p>
+                                <p>
+                                    Website, Domain or Hosting We Can Help.
+                                </p>
+                            </div>
+                            <div class="my-video-div-middle">
+                                <div class="circle-hover-div-btn d-flex justify-content-center align-items-center">
+                                    <div class="circle-div-btn d-flex justify-content-center">
+                                        <div class="play-icon align-self-center">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-video-div-right text-uppercase">
+                                <p>Watch videos to</p>
+                                <p class="text-center pt-4">
+                                    know more
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--VIDEO END-->
+        <!--FAQS START--> 
+        <section class="faqs-section" id="blog">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-lg-6 pb-4">
+                            <div class="fags-left-heading">
+                                <h2 class="text-uppercase py-4">
+                                    Latest News / Blogs
+                                </h2>
+                            </div>
+                            <div class="card" style="max-width: 35rem;">
+                                <div id="slider" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                        <li data-target="#slider" data-slide-to="1"></li>
+                                        <li data-target="#slider" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block card-img-top" src="https://media.istockphoto.com/photos/young-woman-kayaking-through-the-backwaters-of-monroe-island-picture-id1031430214">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 card-img-top" src="https://media.istockphoto.com/photos/hiking-in-the-mountains-picture-id1053472118">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100 card-img-top" src="https://media.istockphoto.com/photos/weve-made-it-all-this-way-i-am-proud-picture-id904172104">
+                                        </div>
+                                    </div>
+                                    <div class="card-body my-fags-card-bg">
+                                        <div class="row">
+                                            <div class="col rect-date d-flex justify-content-center">
+                                                <div class="align-self-center">
+                                                    <span>12</span>
+                                                    <span>Apr</span>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-10 react-date-text">
+                                                <p>
+                                                    Galley of type and scrambled it to make a typesets
+                                                    specimen book with the release sheets.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="fags-left-heading">
+                                <h2 class="text-uppercase py-4">
+                                    Have questions?
+                                </h2>
+                            </div>
+                            <div class="card" style="max-width: 35rem;">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0 text-black">
+                                                <button class="btn btn-link faq-left-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    +
+                                                </button>
+                                                14 Diffrent Creative Header Styles
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body faqs-card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link faq-left-btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    +
+                                                </button>
+                                                Fully Responsive Well Structure
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body faqs-card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link faq-left-btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    +
+                                                </button>
+                                                Premium Slides Portfolios and Forms
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body faqs-card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link faq-left-btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    +
+                                                </button>
+                                                Free Support Free Lifetime Updates
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body faqs-card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row end--> 
+                </div>
+            </div>
+        </section>
+        <!--FAQS END--> 
+        <!--TAB SECTION START-->
+        <section class="tab-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row py-5 text-center text-uppercase">
+                        <div class="col-sm-12 col-md-12">
+                            <h2 class="tab-h2">
+                                What more we offer
+                            </h2>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-tabs row d-flex flex-wrap justify-content-around" role="tablist">
+                        <li class="nav-item mb-2">
+                            <a class="nav-link active tab-btn-a-tag" data-toggle="tab" href="#tabs-1" role="tab">HOSTING</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link tab-btn-a-tag" data-toggle="tab" href="#tabs-2" role="tab">WEBSITES</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link tab-btn-a-tag" data-toggle="tab" href="#tabs-3" role="tab">DOMAINS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link tab-btn-a-tag" data-toggle="tab" href="#tabs-4" role="tab">ECOMMERCE</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link tab-btn-a-tag" data-toggle="tab" href="#tabs-5" role="tab">MOBILE</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content pt-5">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col col-lg-4 py-5 tab-card-div-left">
+                                        <img class="tab-card-img-left img-fluid" src="https://images.unsplash.com/photo-1510022151265-1bb84d406531?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
+                                    </div>
+                                    <div class="col col-lg-8 py-5">
+                                        <div class="card-body my-tab-card-body">
+                                            <h5 class="card-title">
+                                                Web hosting packages provide quality web hosting
+                                                with unlimited resources HOSTING.
+                                            </h5>
+                                            <p class="card-text py-4">
+                                                Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover
+                                                many web sites still in their infancy also the leap into electronic typesetting, remaining
+                                                essentially was in the with the release of sheets versions over the years.
+                                            </p>
+                                            <a href="#" class="btn my-tab-a-btn">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col col-lg-4 py-5 tab-card-div-left">
+                                        <img class="tab-card-img-left img-fluid" src="https://media.istockphoto.com/photos/weve-made-it-all-this-way-i-am-proud-picture-id904172104" alt="Card image cap">
+                                    </div>
+                                    <div class="col col-lg-8 py-5">
+                                        <div class="card-body my-tab-card-body">
+                                            <h5 class="card-title">
+                                                Web hosting packages provide quality web hosting
+                                                with unlimited resources WEBSITES.
+                                            </h5>
+                                            <p class="card-text py-4">
+                                                Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover
+                                                many web sites still in their infancy also the leap into electronic typesetting, remaining
+                                                essentially was in the with the release of sheets versions over the years.
+                                            </p>
+                                            <a href="#" class="btn my-tab-a-btn">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col col-lg-4 py-5 tab-card-div-left">
+                                        <img class="tab-card-img-left img-fluid" src="https://media.istockphoto.com/photos/hiking-in-the-mountains-picture-id1053472118" alt="Card image cap">
+                                    </div>
+                                    <div class="col col-lg-8 py-5">
+                                        <div class="card-body my-tab-card-body">
+                                            <h5 class="card-title">
+                                                Web hosting packages provide quality web hosting
+                                                with unlimited resources DOMAINS.
+                                            </h5>
+                                            <p class="card-text py-4">
+                                                Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover
+                                                many web sites still in their infancy also the leap into electronic typesetting, remaining
+                                                essentially was in the with the release of sheets versions over the years.
+                                            </p>
+                                            <a href="#" class="btn my-tab-a-btn">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-4" role="tabpanel">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col col-lg-4 py-5 tab-card-div-left">
+                                        <img class="tab-card-img-left img-fluid" src="https://media.istockphoto.com/photos/weve-made-it-all-this-way-i-am-proud-picture-id904172104" alt="Card image cap">
+                                    </div>
+                                    <div class="col col-lg-8 py-5">
+                                        <div class="card-body my-tab-card-body">
+                                            <h5 class="card-title">
+                                                Web hosting packages provide quality web hosting
+                                                with unlimited resources ECOMMERCE.
+                                            </h5>
+                                            <p class="card-text py-4">
+                                                Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover
+                                                many web sites still in their infancy also the leap into electronic typesetting, remaining
+                                                essentially was in the with the release of sheets versions over the years.
+                                            </p>
+                                            <a href="#" class="btn my-tab-a-btn">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-5" role="tabpanel">
+                            <div class="card">
+                                <div class="row">
+                                    <div class="col col-lg-4 py-5 tab-card-div-left">
+                                        <img class="tab-card-img-left img-fluid" src="https://images.unsplash.com/photo-1510022151265-1bb84d406531?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80" alt="Card image cap">
+                                    </div>
+                                    <div class="col col-lg-8 py-5">
+                                        <div class="card-body my-tab-card-body">
+                                            <h5 class="card-title">
+                                                Web hosting packages provide quality web hosting
+                                                with unlimited resources MOBILE.
+                                            </h5>
+                                            <p class="card-text py-4">
+                                                Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover
+                                                many web sites still in their infancy also the leap into electronic typesetting, remaining
+                                                essentially was in the with the release of sheets versions over the years.
+                                            </p>
+                                            <a href="#" class="btn my-tab-a-btn">LEARN MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tap-content end--> 
+                </div>
+            </div>
+        </section>
+        <!--TAB SECTION END--> 
+        <!--FEATURE SECTION START-->
+        <section class="feature-section" id="features">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div >
+                            <div class="card my-feature-card my-feature-card1" style="max-width: 23rem;">
+                                <div class="my-feature-card-header-text">
+                                    <p class="pt-5">Secure-Fast-Reliable</p>
+                                    <h5 class="card-title text-uppercase">shared hosting</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img class="card-img-top py-4" src="img/Layer 81@1X.png" alt="Card image cap">
+                                    <p class="card-text pb-4">All hosting features used tempalte</p>
+                                    <a href="#" class="btn">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="card my-feature-card my-feature-card2" style="max-width: 23rem;">
+                                <div class="my-feature-card-header-text">
+                                    <p class="pt-5">Trust Partner your Choice</p>
+                                    <h5 class="card-title text-uppercase">Reseller Hosting</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img class="card-img-top py-4" src="img/Layer 82@1X.png" alt="Card image cap">
+                                    <p class="card-text pb-4">All hosting features used tempalte</p>
+                                    <a href="#" class="btn">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="card my-feature-card my-feature-card3" style="max-width: 23rem;">
+                                <div class="my-feature-card-header-text">
+                                    <p class="pt-5">Storing Resources</p>
+                                    <h5 class="card-title text-uppercase">cloud computing</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img class="card-img-top py-3" src="img/Layer 83@1X.png" alt="Card image cap">
+                                    <p class="card-text pb-3">All hosting features used tempalte</p>
+                                    <a href="#" class="btn">LEARN MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FEATURE CARD SECTION END-->
+        <!--PARALLEX SECTION START-->
+        <section class="parallex-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row text-center text-uppercase">
+                        <div class="col-sm-12 col-md-12 parallex-heading">
+                            <p class="pb-3">More than 200,000 websites hosted</p>
+                            <h2 class="tab-h2 pb-5">
+                                get your website online today
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-around py-3">
+                        <div class="counter-div pb-3">
+                            <div class="counter-text">
+                                <p>Projects</p>
+                                <h2 class="count-project">
+                                    725865+</h2>
+                            </div>
+                        </div>
+                        <div class="counter-div pb-3">
+                            <div class="counter-text">
+                                <p>Clients</p>
+                                <h2 class="count-clients">
+                                    27000+</h2>
+                            </div>
+                        </div>
+                        <div class="counter-div pb-3">
+                            <div class="counter-text">
+                                <p>Awards</p>
+                                <h2 class="count-awards">90+</h2>
+                            </div>
+                        </div>
+                        <div class="counter-div pb-3">
+                            <div class="counter-text">
+                                <p>Domains</p>
+                                <h2 class="count-domains">
+                                    45000+</h2>
+                            </div>
+                        </div>
+                        <div class="counter-div pb-3">
+                            <div class="counter-text">
+                                <p>Days</p>
+                                <h2 class="count-days">24/7</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--PARALLEX SECTION END--> 
+        <!--WORK SECTION START-->
+        <section class="work-section">
+            <div class="container-fluid">
+                <div class="row text-center text-uppercase">
+                    <div class="col-sm-12 col-md-12 work-heading">
+                        <p class="pb-3"> Build your own New website in minutes!</p>
+                        <h2 class="pb-5">
+                            Check out Portfolio websites
+                        </h2>
+                    </div>
+                </div>
+              
+                <!--CUSTOME SLIDER START--> 
+                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                    </div>
+                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+                        <div>
+                            <img data-u="image" src="img/work-1.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/work-2.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/work-3.png" />
+                        </div>
+                       
+                    </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">animation</a>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <!--CUSTOME SLIDER END--> 
+            </div>
+        </section>
+        <!--WORK SECTION END--> 
+        <!--SCRIPT SECTION START--> 
+        <section class="script-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-lg-4">
+                            <img class="img-fluid" src="img/Layer 63@1X.png" alt="no image" />
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                            <p class="script-p-tag">
+                                Over 100+ Free 1-Click App Installs
+                            </p>
+                            <div class="first-row-script d-flex flex-wrap justify-content-between py-4">
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="img/script1.png" alt="no image"/>
+                                </div>
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="img/script2.png" alt="no image"/>
+                                </div>
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="https://source.unsplash.com/random/3" alt="no image"/>
+                                </div>
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="https://source.unsplash.com/random/4" alt="no image"/>
+                                </div>
+
+                            </div>
+                            <div class="second-row-script d-flex flex-wrap justify-content-between">
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="img/script1.png" alt="no image"/>
+                                </div>
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="img/script2.png" alt="no image"/>
+                                </div>
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="https://source.unsplash.com/random/3" alt="no image"/>
+                                </div>
+                                <div class="script-img-div mb-2">
+                                    <img class="script-img" src="https://source.unsplash.com/random/4" alt="no image"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SCRIPT SECTION END--> 
+        <!--PEOPLES SAY SECTION START--> 
+        <section class="peoples-say-section" id="support">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row text-center text-uppercase">
+                        <div class="col-sm-12 col-md-12 peoples-heading">
+                            <h2 class="pb-5">
+                                why customers <span><img src="img/Layer 30@1X.png" alt="no image"/></span> us!
+                            </h2>
+                        </div>
+                    </div>
+                    <!--card carousel--> 
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="d-block card-img-top peopls-say-img" src="img/peoples-say-avatar-1.png" alt="no image">
+                                    </div>
+                                    <p class="peoples-p1-text py-4">
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here <br/>
+                                        now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites <br/> still in their infancy various versions have evolved over the years.
+                                    </p>
+                                    <p class="peoples-p2-text">
+                                        <span>- Michile Johnson</span> <span>-website</span>
+                                    </p>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="d-block card-img-top peopls-say-img" src="img/peoples-say-avatar-2.png" alt="no image">
+                                    </div>
+                                    <p class="peoples-p1-text py-4">
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here <br/>
+                                        now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites <br/> still in their infancy various versions have evolved over the years.
+                                    </p>
+                                    <p class="peoples-p2-text">
+                                        <span>- Tony Johnson</span> <span>-website</span>
+                                    </p>
+                                </div>
+                                <div class="carousel-item text-center">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="d-block card-img-top peopls-say-img" src="img/peoples-say-avatar-1.png" alt="no image">
+                                    </div>
+                                    <p class="peoples-p1-text py-4">
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here <br/>
+                                        now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites <br/> still in their infancy various versions have evolved over the years.
+                                    </p>
+                                    <p class="peoples-p2-text">
+                                        <span>- Johnson</span> <span>-website</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--carousel end--> 
+                </div>
+            </div>
+        </section>
+        <!--PEOPLES SAY SECTION END-->
+        <!--Clients Icon START-->
+        <section class="client-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="client-list d-flex flex-wrap justify-content-between">
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 85@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 86@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 87@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 88@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 89@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 90@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 91@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 92@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                            <div class="clients-img-div mb-2">
+                                <a href="#">
+                                    <img src="img/Layer 93@1X.png" alt="no image"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Clients Icon END-->
+        <section class="contact-footer-section" id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 pb-4">
+                        <div class="contact-footer-div">
+                            <p>
+                                <span class="need-help">Need Help?</span> <spna class="call-us">Call Us 24/7:</spna><br>
+                            <span class="footer-contact-number">23-456-7890</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 ">
+                        <div class="footer-1st-row-snd-col">
+                            <label class="pb-3">
+                                Sign up to Newsletter for get special offers
+                            </label>
+
+                            <div class="d-flex flex-wrap">
+                                <div class="input-group my-footer-input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Please enter your email..." aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                                <div class="ml-4">
+                                    <button type="button" class="btn btn-sign-footer text-white">SIGN UP</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-INFO SECTION START-->
+        <section class="footer-info-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <!--first row end-->
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col pb-4">
+                                    <h3 class="footer-info-h3 pb-4">
+                                        Hosting Packages
+                                    </h3>
+                                    <div class="footer-info-div-list">
+                                        <a class="pb-3" href="#">Web Hosting</a>
+                                        <a class="pb-3" href="#">Reseller Hosting</a>
+                                        <a class="pb-3" href="#">VPS Hosting</a>
+                                        <a class="pb-3" href="#">Dedicated Servers</a>
+                                        <a class="pb-3" href="#">Windows Hosting</a>
+                                        <a class="pb-3" href="#">Cloud Hosting</a>
+                                        <a href="#">Linux Servers</a>
+                                    </div>
+                                </div>
+                                <div class="col pb-4">
+                                    <h3 class="footer-info-h3 pb-4">
+                                        Our Products
+                                    </h3>
+                                    <div class="footer-info-div-list">
+                                        <a class="pb-3" href="#">Website Builder</a>
+                                        <a class="pb-3" href="#">Web Design</a>
+                                        <a class="pb-3" href="#">Logo Design</a>
+                                        <a class="pb-3" href="#">Register Domains</a>
+                                        <a class="pb-3" href="#">Traffic Booster</a>
+                                        <a class="pb-3" href="#">Search Advertising</a>
+                                        <a href="#">Email Marketing</a>
+                                    </div>
+                                </div>
+                                <div class="col pb-4">
+                                    <h3 class="footer-info-h3 pb-4">
+                                        Company
+                                    </h3>
+                                    <div class="footer-info-div-list">
+                                        <a class="pb-3" href="#">About Us</a>
+                                        <a class="pb-3" href="#">Press & Media</a>
+                                        <a class="pb-3" href="#">News / Blogs</a>
+                                        <a class="pb-3" href="#">Careers</a>
+                                        <a class="pb-3" href="#">Awards & Reviews</a>
+                                        <a class="pb-3" href="#">Testimonials</a>
+                                        <a href="#">Affiliate Program</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--inner row end--> 
+                        </div>
+                        <!--for right side div--> 
+                        <div class="col-lg-3">
+                            <div class="footer-left-col-div">
+                                <a href="#">
+                                    <img class="img-fluid footer-left-col-img" src="img/arkahosting-icon.png" alt="no image" />
+                                </a>
+                                <p class="pt-4">
+                                    2901 Marmora Road, Glassgow,<br/>
+                                    Seattle, WA 98122-1090<br/><br/>
+
+                                    Phone:<span> 1 -234 -456 -7890</span><br/>
+                                    Mail:<span> info@arkahost.com</span><br/>
+                                    <a href="#">
+                                        View Directions
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second row end--> 
+                    <div class="row pt-5">
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col pb-4">
+                                    <h3 class="footer-info-h3 pb-4">
+                                        Follow US
+                                    </h3>
+                                    <div class="footer-follow-us d-flex flex-wrap justify-content-between">
+                                        <div class="footer-follow-circle fb-bg d-flex justify-content-center">
+                                            <a class="d-flex align-items-center" href="https://www.facebook.com/">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-follow-circle tw-bg d-flex justify-content-center">
+                                            <a class="d-flex align-items-center" href="https://www.twitter.com/">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-follow-circle gp-bg d-flex justify-content-center">
+                                            <a class="d-flex align-items-center" href="https://www.gmail.com/">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-follow-circle yt-bg d-flex justify-content-center">
+                                            <a class="d-flex align-items-center" href="https://www.youtube.com/">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-follow-circle in-bg d-flex justify-content-center">
+                                            <a class="d-flex align-items-center" href="https://www.linkedin.com/">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col pb-4">
+                                    <h3 class="footer-info-h3 pb-4">
+                                        Resources
+                                    </h3>
+                                    <div class="footer-info-div-list">
+                                        <a class="pb-3" href="#">How to Create a Website</a>
+                                        <a class="pb-3" href="#">How to Transfer a Website</a>
+                                        <a class="pb-3" href="#">Start a Web Hosting Business</a>
+                                        <a href="#">How to Start a Blog</a>
+                                    </div>
+                                </div>
+                                <div class="col pb-4">
+                                    <h3 class="footer-info-h3 pb-4">
+                                        Support
+                                    </h3>
+                                    <div class="footer-info-div-list">
+                                        <a class="pb-3" href="#">Product Support</a>
+                                        <a class="pb-3" href="#">Contact Us</a>
+                                        <a class="pb-3" href="#">Knowledge Base</a>
+                                        <a href="#">Tutorials</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--inner row end--> 
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex flex-wrap justify-content-around">
+                                <img class="footer-row-img mb-2" src="img/footer-row-image-1.png" alt="no image"/>
+                                <img class="footer-row-img mb-2" src="img/footer-row-image-2.png" alt="no image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third row end--> 
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-INFO SECTION END-->
+        <!--FOOTER END SECTION START-->
+        <section class="footer-end-section">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="copyright-footer d-flex flex-wrap justify-content-around">
+                        <div class="pb-3">
+                            <p>
+                                Copyright © 2015 ARKAHOST. All rights reserved.
+                            </p>
+                        </div>
+                        <div class="footer-term-condition">
+                            <div class="footer-term-condition-link">
+                                <a class="btn" href="#">
+                                    Terms of Service
+                                </a>
+                                <spna>|</spna>
+                                <a class="btn" href="#">
+                                    Privacy Policy
+                                </a>
+                                <spna>|</spna>
+                                <a class="btn" href="#">
+                                    Site Map
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER END SECTION END-->
+        <section class="ending">
+        </section>
+
+        <!-- Optional JavaScript -->
+        <script src="js/index.js"></script>
+        <!--FOR JSOOR SLIDER--> 
+        <script type="text/javascript">jssor_1_slider_init();
+        </script>
+        <!-- #endregion Jssor Slider End -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
